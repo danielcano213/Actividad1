@@ -1,48 +1,78 @@
+/* General */
 body {
   font-family: Arial, sans-serif;
-  background-color: #eef2f7;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
 }
-header {
-  background-color: #004085;
+
+header, footer {
+  background-color: #007bff;
   color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 1rem 0;
 }
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-#dashboard {
-  padding: 2rem;
   text-align: center;
 }
-.crm-actions button {
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #007BFF;
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
   color: white;
+  text-decoration: none;
 }
-.crm-actions button:hover {
-  background-color: #0056b3;
-}
-#output {
+
+/* Panel CRM */
+#dashboard {
+  text-align: center;
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: white;
+}
+
+.crm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+/* Botones Mejorados */
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #28a745;
+  color: white;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crm-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

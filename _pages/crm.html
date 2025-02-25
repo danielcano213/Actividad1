@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRM - Panel Principal</title>
   <link rel="stylesheet" href="../_css/cmr.css">
-  <script src="../_js/crm.js" defer></script>
 </head>
 <body>
   <header>
@@ -13,6 +12,7 @@
     <nav>
       <ul>
         <li><a href="../index.html">Volver al Inicio</a></li>
+        <li><a href="../_pages/reportes.html">Ver Reportes</a></li> <!-- Enlace a reportes -->
       </ul>
     </nav>
   </header>
@@ -23,13 +23,10 @@
       <p>Aquí puedes gestionar tus clientes, ventas y campañas de marketing.</p>
 
       <div class="crm-actions">
-        <button onclick="gestionarContactos()">📋 Gestionar Contactos</button>
-        <button onclick="seguimientoVentas()">📊 Seguimiento de Ventas</button>
-        <button onclick="automatizacionMarketing()">📧 Automatización de Marketing</button>
-        <button onclick="verReportes()">📈 Ver Reportes</button>
+        <a href="../_pages/contactos.html" class="btn">📋 Gestionar Contactos</a>
+        <a href="../_pages/ventas.html" class="btn">📊 Seguimiento de Ventas</a>
+        <a href="../_pages/marketing.html" class="btn">📧 Automatización de Marketing</a>
       </div>
-
-      <div id="output"></div>
     </section>
   </main>
 
